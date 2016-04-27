@@ -13,9 +13,9 @@ print buzzer.name()
 
 # Play sound (DO, RE, MI, etc.), pausing for 0.1 seconds between notes
 for chord_ind in range (0,7):
-    # play each note for one second
-    print buzzer.playSound(chords[chord_ind], 1000000)
-    time.sleep(0.1)
+	 # play each note for one second
+	 print buzzer.playSound(chords[chord_ind], 1000000)
+	 time.sleep(0.1)
 
 print "exiting application"
 
