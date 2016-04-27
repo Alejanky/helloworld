@@ -4,7 +4,7 @@ def on_connect(client, userdate, flags, rc):
 	client.subscribe('poi')
 def on_message(client, userdate, msg):
 	print(msg.topic+' '+str(msg.payload))
-	will_set('poi', 'Hola', 0, False)
+	publish('poi', 'Hola')
 
 
 
